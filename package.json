@@ -1,19 +1,7 @@
 {
-	"name": "AdalabWebStarterKit",
+	"name": "EvaluacionAidaSprint3",
 	"version": "1.0.0",
-	"description": "Adalab web starter kit",
-	"dependencies": {},
-	"devDependencies": {},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com:Adalab/Adalab-web-starter-kit.git"
-	},
-	"author": "Adalab",
-	"license": "MIT",
-	"homepage": "https://github.com/Adalab/Adalab-web-starter-kit",
+	"description": "Evaluación Aida Sprint 3",
 	"dependencies": {
 		"browser-sync": "*",
 		"gulp-autoprefixer": "*",
@@ -30,5 +18,16 @@
 		"gulp": "*",
 		"run-sequence": "*",
 		"gulp-zip": "*"
-	}
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com:Adalab/evaluacion-sprint-3-grupo-manana-Alienah.git"
+	},
+	"author": "Adalab",
+	"license": "MIT",
+	"homepage": "https://adalab.github.io/evaluacion-sprint-3-grupo-manana-Alienah/"
 }

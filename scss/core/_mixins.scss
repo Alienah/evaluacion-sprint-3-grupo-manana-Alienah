@@ -1,0 +1,9 @@
+@mixin robotoMedium() {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+@mixin robotoSlabBold() {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+}
