@@ -2,29 +2,27 @@
 margin: 0;
 box-sizing: border-box;
 }
-
 body{
 background: $colorWhite;
 }
-
 .title{
 text-align: center;
 }
-
-.container__block{
-padding: 30px 15px ;
+.container-inside{
+text-align: center;
+margin: 30px 15px ;
 	@media all and (min-width: 768px){
-		padding: 30px 39px 60px;
+		margin: 30px 39px 60px;
 	}
 	@media all and (min-width: 1200px){
-		padding: 30px 275px;
+		margin: 30px 275px;
 		max-width: 730px;
 	}
 }
-
 .block-text{
 margin-bottom: 45px;
 	@media all and (min-width: 768px){
 		margin-bottom: 30px;
 	}
+line-height: 30px;
 }

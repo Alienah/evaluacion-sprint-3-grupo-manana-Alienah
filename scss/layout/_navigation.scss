@@ -1,0 +1,32 @@
+.navigator__close-button{
+	background-image: url("../images/ico-close.svg");
+	background-color: $colorOrange;
+	@include background;
+}
+.navigation-bar{
+	position: absolute;
+	width: 276px;
+	min-height: 100vh;
+	opacity: 0.96;
+  background-color: $colorWhite;
+	display: none;
+}
+.menu__link{
+	font-size: 16px;
+	@include robotoLight;
+	text-decoration: none;
+	color: initial;
+	padding-left: 15px;
+}
+.menu{
+	list-style: none;
+	padding-left: 0;
+	padding-top: 45px;
+}
+.menu__item{
+	border-top: 1px solid rgba(140, 203, 234, 0.3);
+  height: 45px;
+}
+.menu__item:last-child{
+	border-bottom: 1px solid rgba(140, 203, 234, 0.3);
+}

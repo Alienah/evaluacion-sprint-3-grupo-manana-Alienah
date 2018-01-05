@@ -7,3 +7,11 @@
 	font-family: 'Roboto Slab', serif;
 	font-weight: 700;
 }
+@mixin robotoLight() {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+@mixin background() {
+	background-repeat: no-repeat;
+	background-position: center center;
+}

@@ -1,4 +1,22 @@
-.buttons {
-	border-radius: 50%;
+.buttons{
+	border-radius: 22.5px;
 	background: $colorWhite;
+}
+.nav__button{
+	height: 44px;
+	width: 44px;
+	border: none;
+}
+.button-scroll{
+	height: 45px;
+	width: 45px;
+}
+.scroll--down{
+	background-image: url("../images/ico-scroll-down.svg");
+	@include background;
+	object-fit: contain;
+	border: none;
+}
+.scroll--up{
+
 }
