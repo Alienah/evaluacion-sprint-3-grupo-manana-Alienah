@@ -5,8 +5,11 @@ box-sizing: border-box;
 body{
 background: $colorWhite;
 }
-.title{
+.center{
 text-align: center;
+}
+.block{
+overflow: auto;
 }
 .container-inside{
 text-align: center;
@@ -24,5 +27,4 @@ margin-bottom: 45px;
 	@media all and (min-width: 768px){
 		margin-bottom: 30px;
 	}
-line-height: 30px;
 }

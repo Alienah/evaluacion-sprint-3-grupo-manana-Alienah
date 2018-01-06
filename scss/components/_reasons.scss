@@ -1,0 +1,50 @@
+.block-reasons{
+	background: $colorSurf;
+	@media all and (min-width: 768px){
+	min-height: 60vh;
+	@include flexColumnCenter;
+	}
+}
+.block-reasons .container-inside{
+	margin: 30px 15px 60px;
+		@media all and (min-width: 768px){
+			margin: 30px 41px 60px 39px;
+			max-width: initial;
+		}
+		@media all and (min-width: 1200px){
+			margin: 60px 85px;
+		}
+}
+.reasons-list{
+	list-style: none;
+	padding-left: 0;
+	margin-top: 45px;
+	display: grid;
+  grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	justify-content: space-evenly;
+  @media all and (min-width: 768px){
+		grid-column-gap: 30px;
+		grid-template-columns: 210px 210px 210px;
+	  grid-template-rows: 1fr;
+	}
+  @media all and (min-width: 1200px){
+		grid-template-columns: 350px 350px 350px;
+	}
+}
+.more-button{
+	background: $colorOrange;
+	color: $colorWhite;
+	width: 184px;
+	@media all and (min-width: 768px){
+		width: 210px;
+	}
+	@media all and (min-width: 1200px){
+		width: 255px;
+	}
+}
+@media all and (min-width: 768px){
+.block-reasons .block-text {
+    margin-bottom: 60px;
+}
+}

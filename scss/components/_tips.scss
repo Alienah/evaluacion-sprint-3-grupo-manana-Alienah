@@ -1,3 +1,9 @@
+@media all and (min-width: 768px){
+.block__tips{
+	min-height: 40vh;
+	@include flexColumnCenter;
+}
+}
 .block__tips .container-inside{
 	text-align: left;
 }
@@ -15,4 +21,10 @@
 .go-button{
 	color: $colorOrange;
 	width: 76px;
+	@media all and (min-width: 768px){
+		width: 91px;
+	}
+	@media all and (min-width: 1200px){
+		width: 160px;
+	}
 }

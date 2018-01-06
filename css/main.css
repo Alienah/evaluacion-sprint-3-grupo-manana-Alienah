@@ -121,6 +121,32 @@ body {
   width: 76px;
 }
 
+.block-reasons {
+  background: #eff9ff;
+}
+
+.block-reasons .container-inside {
+  margin: 30px 15px 60px;
+}
+
+.reasons-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.more-button {
+  background: #f26002;
+  color: #ffffff;
+  width: 184px;
+}
+
 .navigator__close-button {
   background-image: url("../images/ico-close.svg");
   background-color: #f26002;
@@ -171,8 +197,12 @@ body {
   background: #ffffff;
 }
 
-.title {
+.center {
   text-align: center;
+}
+
+.block {
+  overflow: auto;
 }
 
 .container-inside {
@@ -182,10 +212,60 @@ body {
 
 .block-text {
   margin-bottom: 45px;
-  line-height: 30px;
 }
 
 @media all and (min-width: 768px) {
+  .block__tips {
+    min-height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .go-button {
+    width: 91px;
+  }
+
+  .block-reasons {
+    min-height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .block-reasons .container-inside {
+    margin: 30px 41px 60px 39px;
+    max-width: initial;
+  }
+
+  .reasons-list {
+    grid-column-gap: 30px;
+    grid-template-columns: 210px 210px 210px;
+    grid-template-rows: 1fr;
+  }
+
+  .more-button {
+    width: 210px;
+  }
+
+  .block-reasons .block-text {
+    margin-bottom: 60px;
+  }
+
   .container-inside {
     margin: 30px 39px 60px;
   }
@@ -196,6 +276,22 @@ body {
 }
 
 @media all and (min-width: 1200px) {
+  .go-button {
+    width: 160px;
+  }
+
+  .block-reasons .container-inside {
+    margin: 60px 85px;
+  }
+
+  .reasons-list {
+    grid-template-columns: 350px 350px 350px;
+  }
+
+  .more-button {
+    width: 255px;
+  }
+
   .container-inside {
     margin: 30px 275px;
     max-width: 730px;
