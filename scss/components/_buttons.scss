@@ -1,6 +1,6 @@
 .buttons{
 	border-radius: 22.5px;
-	background: $colorWhite;
+	background-color: $colorWhite;
 	cursor: pointer;
 }
 .button-text{
@@ -9,6 +9,23 @@
 	font-size: 20px;
 	@include robotoMedium;
 	text-align: center;
+}
+.btn-back-light{
+	color: $colorOrange;
+	transition: background-color ease 0.5s, color ease 0.5s;
+	&:hover{
+		background-color: $colorOrange;
+		color: $colorWhite;
+	}
+}
+.btn-back-color{
+	background: $colorOrange;
+	color: $colorWhite;
+	transition: background-color ease 0.5s, color ease 0.5s;
+	&:hover{
+		background-color: $colorWhite;
+		color: $colorOrange;
+	}
 }
 .nav__button{
 	height: 44px;
@@ -25,11 +42,11 @@
 	background-image: url("../images/ico-scroll-down.svg");
 	object-fit: contain;
 	border: none;
-	transition: width ease 0.3s;
-	transition: border-radius ease-in 0.7s;
+	transition: background-color ease 0.5s, background-image ease 0.5s;
 	z-index: 2;
 	&:hover{
-		border-radius: 15px;
+		background-image: url("../images/ico-scroll-down-white.svg");
+		background-color: $colorOrange;
 	}
 }
 .container__button-scroll{
@@ -42,6 +59,13 @@
 	background-image: url("../images/ico-arrow.svg");
 	border: none;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	transition: background-color ease 0.5s, background-image ease 0.5s;
+	&:hover{
+		background-image: url("../images/ico-arrow-white.svg");
+		background-color: $colorOrange;
+	}
+}
+.scroll--up-link{
 	position: absolute;
 	top: -25px;
 }

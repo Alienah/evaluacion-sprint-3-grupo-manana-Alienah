@@ -1,6 +1,6 @@
 .buttons {
   border-radius: 22.5px;
-  background: #ffffff;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -11,6 +11,29 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   text-align: center;
+}
+
+.btn-back-light {
+  color: #f26002;
+  -webkit-transition: background-color ease 0.5s, color ease 0.5s;
+  transition: background-color ease 0.5s, color ease 0.5s;
+}
+
+.btn-back-light:hover {
+  background-color: #f26002;
+  color: #ffffff;
+}
+
+.btn-back-color {
+  background: #f26002;
+  color: #ffffff;
+  -webkit-transition: background-color ease 0.5s, color ease 0.5s;
+  transition: background-color ease 0.5s, color ease 0.5s;
+}
+
+.btn-back-color:hover {
+  background-color: #ffffff;
+  color: #f26002;
 }
 
 .nav__button {
@@ -32,15 +55,14 @@
   -o-object-fit: contain;
   object-fit: contain;
   border: none;
-  -webkit-transition: width ease 0.3s;
-  transition: width ease 0.3s;
-  -webkit-transition: border-radius ease-in 0.7s;
-  transition: border-radius ease-in 0.7s;
+  -webkit-transition: background-color ease 0.5s, background-image ease 0.5s;
+  transition: background-color ease 0.5s, background-image ease 0.5s;
   z-index: 2;
 }
 
 .scroll--down:hover {
-  border-radius: 15px;
+  background-image: url("../images/ico-scroll-down-white.svg");
+  background-color: #f26002;
 }
 
 .container__button-scroll {
@@ -59,6 +81,16 @@
   border: none;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color ease 0.5s, background-image ease 0.5s;
+  transition: background-color ease 0.5s, background-image ease 0.5s;
+}
+
+.scroll--up:hover {
+  background-image: url("../images/ico-arrow-white.svg");
+  background-color: #f26002;
+}
+
+.scroll--up-link {
   position: absolute;
   top: -25px;
 }
@@ -153,7 +185,6 @@ body {
 }
 
 .go-button {
-  color: #f26002;
   width: 76px;
 }
 
@@ -183,8 +214,6 @@ body {
 }
 
 .more-button {
-  background: #f26002;
-  color: #ffffff;
   width: 184px;
 }
 
