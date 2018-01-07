@@ -1,6 +1,7 @@
 .buttons {
   border-radius: 22.5px;
   background: #ffffff;
+  cursor: pointer;
 }
 
 .button-text {
