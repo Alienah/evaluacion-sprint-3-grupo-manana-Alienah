@@ -132,6 +132,7 @@ body {
 .tips-text {
   color: #4a4a4a;
   margin-bottom: 30px;
+  line-height: 30px;
 }
 
 .go-button {
@@ -157,9 +158,11 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  justify-items: center;
+}
+
+.reasons-item {
+  width: 184px;
 }
 
 .more-button {
@@ -223,6 +226,9 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .heart {
@@ -330,6 +336,9 @@ body {
     grid-column-gap: 30px;
     grid-template-columns: 210px 210px 210px;
     grid-template-rows: 1fr;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
 
   .list-title {

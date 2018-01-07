@@ -4,6 +4,7 @@
 	background: $colorDarkBlue;
 	overflow: auto;
 	@include flexColumnCenter;
+	align-items: center;
 }
 .heart{
 	color: $colorOrange;
