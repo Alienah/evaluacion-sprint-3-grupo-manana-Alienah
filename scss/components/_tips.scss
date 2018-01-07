@@ -10,6 +10,9 @@
 .section-category{
 	font-size: 14px;
 	color: $colorLightBlue;
+	@media all and (min-width: 1200px){
+		font-size: 16px;
+	}
 }
 .tips-title{
 	margin: 15px 0;
@@ -17,6 +20,7 @@
 .tips-text{
 	color: $colorDarkGrey;
 	margin-bottom: 30px;
+	
 }
 .go-button{
 	color: $colorOrange;

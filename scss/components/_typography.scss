@@ -2,8 +2,17 @@ body {
 font: 18px $robotoRegular;
 line-height: 30px;
 color: $colorBlack;
+@media all and (min-width: 768px){
+	font: 20px $robotoRegular;
+}
 }
 .title-font{
 @include robotoSlabBold;
 font-size: 24px;
+@media all and (min-width: 768px){
+	font-size: 26px;
+}
+@media all and (min-width: 1200px){
+	font-size: 32px;
+}
 }

@@ -10,28 +10,48 @@
 	min-height: 100vh;
 	display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 	background-image: url("../images/cover.jpg");
 	@include background;
 	background-size: cover;
 }
 .block__hero .hero-inside{
-	margin: 280px 15px 50px;
+	text-align: center;
+	margin: 0 15px 50px;
+	@media all and (min-width: 768px){
+		margin: 0 39px 30px;
+}
+	@media all and (min-width: 1200px){
+		margin: 0 275px 30px;
+		width: 730px;
+	}
 }
 .hero__title{
 	text-transform: uppercase;
-	width: 290px;
-  height: 110px;
-  color: $colorWhite;
+	color: $colorWhite;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 	@include robotoSlabBold;
 	font-size: 42px;
 	line-height: 55px;
+	@media all and (min-width: 768px){
+		font-size: 80px;
+		line-height: 106px;
+	}
+	@media all and (min-width: 1200px){
+		font-size: 100px;
+		line-height: 132px;
+	}
 }
 .hero__text{
 	margin-top: 10px;
-	width: 290px;
-  height: 21px;
-  color: $colorWhite;
+	font-size: 16px;
+	color: $colorWhite;
+	@media all and (min-width: 768px){
+		margin-top: 20px;
+		font-size: 24px;
+	}
+	@media all and (min-width: 1200px){
+		margin-top: 30px;
+	}
 }

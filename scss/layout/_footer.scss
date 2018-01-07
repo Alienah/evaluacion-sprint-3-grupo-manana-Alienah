@@ -1,0 +1,18 @@
+.footer{
+	position: relative;
+	min-height: 20vh;
+	background: $colorDarkBlue;
+	overflow: auto;
+	@include flexColumnCenter;
+}
+.heart{
+	color: $colorOrange;
+}
+.footer .container-footer{
+	margin-top: 45px;
+}
+.footer-text{
+	font-size: 14px;
+	color: $colorWhite;
+	line-height: 30px;
+}
