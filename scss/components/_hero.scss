@@ -5,6 +5,10 @@
 	position: absolute;
 	left: 0;
 	top: 0;
+	transition: background-color ease 0.5s;
+	&:hover {
+		background-color: $colorOrange;
+	}
 }
 .block__hero{
 	min-height: 100vh;

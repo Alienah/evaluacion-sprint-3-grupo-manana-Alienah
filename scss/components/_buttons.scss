@@ -14,6 +14,7 @@
 	height: 44px;
 	width: 44px;
 	border: none;
+	cursor: pointer;
 }
 .button-scroll{
 	height: 45px;
@@ -24,6 +25,12 @@
 	background-image: url("../images/ico-scroll-down.svg");
 	object-fit: contain;
 	border: none;
+	transition: width ease 0.3s;
+	transition: border-radius ease-in 0.7s;
+	z-index: 2;
+	&:hover{
+		border-radius: 15px;
+	}
 }
 .container__button-scroll{
 	position: relative;

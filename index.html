@@ -9,64 +9,66 @@
 	<title>Evaluación Aida Sprint 3</title>
 </head>
 <body>
-	<nav class="navigation-bar">
-	 <button type="button" title="Close" class="nav__button navigator__close-button"></button>
-	 <ul class="menu">
-		<li class="menu__item"><a href="" class="menu__link">Anonymous proxy</a></li>
-		<li class="menu__item"><a href="" class="menu__link">Looking Through A Window</a></li>
-		<li class="menu__item"><a href="" class="menu__link">3 Reasons To Purchase</a></li>
-	 </ul>
-	</nav>
+	<div class="page">
+		<nav class="navigation-bar">
+		 <button type="button" title="Close" class="nav__button navigator__close-button"></button>
+		 <ul class="menu">
+			<li class="menu__item" onclick="location.href='#section__hero'">Anonymous proxy</li>
+			<li class="menu__item" onclick="location.href='#section__tips'">Looking Through A Window</li>
+			<li class="menu__item" onclick="location.href='#section__reasons'">3 Reasons To Purchase</li>
+		 </ul>
+		</nav>
 
-	<main>
-		<section class="block__hero">
-			<button type="button" title="Open" class="nav__button navigator__open-button"></button>
-			<div class="hero-inside">
-				<h1 class="center hero__title">Anonymous Proxy</h1>
-				<p class="block-text hero__text">In hac habitasse platea dictumst.</p>
-				<a href="#section__tips"><button type="button" name="hero-button" class="buttons hero__button-scroll button-scroll scroll--down"></button></a>
-			</div>
-		</section>
+		<main class="main">
+			<section class="block__hero" id="section__hero">
+				<button type="button" title="Open" class="nav__button navigator__open-button"></button>
+				<div class="hero-inside">
+					<h1 class="center hero__title">Anonymous Proxy</h1>
+					<p class="block-text hero__text">In hac habitasse platea dictumst.</p>
+					<a href="#section__tips"><button type="button" name="hero-button" class="buttons hero__button-scroll button-scroll scroll--down"></button></a>
+				</div>
+			</section>
 
-		<section class="block block__tips" id="section__tips">
-			<div class="container-inside">
-				<p class="section-category">Insomnia Tips</p>
-				<h2 class="title-font tips-title">Looking Through A Window</h2>
-				<p class="tips-text">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
-				<button type="button" title="Go button" class="buttons button-text go-button">Go</button>
-			</div>
-		</section>
+			<section class="block block__tips" id="section__tips">
+				<div class="container-inside">
+					<p class="section-category">Insomnia Tips</p>
+					<h2 class="title-font tips-title">Looking Through A Window</h2>
+					<p class="tips-text">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
+					<button type="button" title="Go button" class="buttons button-text go-button">Go</button>
+				</div>
+			</section>
 
-		<section class="block block-reasons">
-			<div class="container-inside ">
-				<h2 class="title-font">3 Reasons To Purchase</h2>
-				<ul class="reasons-list">
-					<li class="block-text reasons-item">
-						<h3 class="list-title">Ut sed metus</h3>
-						<p>Lorem ipsum dolor sit amet, consecteur.</p>
-					</li>
-					<li class="block-text reasons-item">
-						<h3 class="list-title">Curabitur ac erat</h3>
-						<p>Mauris mattis urna quis lorem molestie.</p>
-					</li>
-					<li class="block-text reasons-item">
-						<h3 class="list-title">Morbi dictum</h3>
-						<p>Aliquam in dolor et dolor tincidunt.</p>
-					</li>
-				</ul>
-				<button type="button" title="More button" class="buttons button-text more-button">More reasons</button>
-			</div>
-		</section>
-	</main>
-	<div class="container__button-scroll">
-		<button type="button" title="button" class="buttons button-scroll scroll--up"></button>
-	</div>
-	<footer class="footer">
-		<div class="container-inside container-footer">
-			<p class="footer-text">©2017</p>
-			<p class="footer-text">we <span class="heart">❤︎</span> components</p>
+			<section class="block block-reasons" id="section__reasons">
+				<div class="container-inside ">
+					<h2 class="title-font">3 Reasons To Purchase</h2>
+					<ul class="reasons-list">
+						<li class="block-text reasons-item">
+							<h3 class="list-title">Ut sed metus</h3>
+							<p>Lorem ipsum dolor sit amet, consecteur.</p>
+						</li>
+						<li class="block-text reasons-item">
+							<h3 class="list-title">Curabitur ac erat</h3>
+							<p>Mauris mattis urna quis lorem molestie.</p>
+						</li>
+						<li class="block-text reasons-item">
+							<h3 class="list-title">Morbi dictum</h3>
+							<p>Aliquam in dolor et dolor tincidunt.</p>
+						</li>
+					</ul>
+					<button type="button" title="More button" class="buttons button-text more-button">More reasons</button>
+				</div>
+			</section>
+		</main>
+		<div class="container__button-scroll">
+			<button type="button" title="button" class="buttons button-scroll scroll--up"></button>
 		</div>
-	</footer>
-	<script src="js/main.min.js"></script>
+		<footer class="footer">
+			<div class="container-inside container-footer">
+				<p class="footer-text">©2017</p>
+				<p class="footer-text">we <span class="heart">❤︎</span> components</p>
+			</div>
+		</footer>
+		<script src="js/main.min.js"></script>
+	</div>
 </body>
 </html>
