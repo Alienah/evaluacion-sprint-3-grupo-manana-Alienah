@@ -453,6 +453,10 @@ body {
     justify-content: space-evenly;
   }
 
+  .reasons-item {
+    width: 210px;
+  }
+
   .list-title {
     font-size: 24px;
     line-height: 45px;
@@ -508,6 +512,10 @@ body {
 
   .reasons-list {
     grid-template-columns: 350px 350px 350px;
+  }
+
+  .reasons-item {
+    width: 350px;
   }
 
   .more-button {

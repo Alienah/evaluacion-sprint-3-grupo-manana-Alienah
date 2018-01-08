@@ -6,7 +6,8 @@
 	"js": {
 		"src": [
 			"js/nav.js",
-			"js/scroll.js",
+			"js/reasons.js",
+			"js/scroll.js",			
 			"js/main.js"
 		],
 		"dest": "js/"

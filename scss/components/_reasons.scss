@@ -38,6 +38,12 @@
 }
 .reasons-item{
 	width: 184px;
+	@media all and (min-width: 768px){
+		width: 210px;
+	}
+	@media all and (min-width: 1200px){
+		width: 350px;
+	}
 }
 @media all and (min-width: 768px){
 	.list-title{
