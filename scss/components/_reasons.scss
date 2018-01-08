@@ -37,6 +37,9 @@
 	}
 }
 .reasons-item{
+	display: grid;
+  grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
 	width: 184px;
 	@media all and (min-width: 768px){
 		width: 210px;
