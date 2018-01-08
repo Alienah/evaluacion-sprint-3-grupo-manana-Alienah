@@ -9,6 +9,10 @@
 	&:hover{
 	background-color: $colorBlue;
 	}
+	display: none;
+	.page__menu-visible &{
+		display: block;
+}
 }
 .page__menu-visible{
 	&::after{
@@ -18,12 +22,12 @@
 		top: 0;
 		height: 100%;
 		width: 100%;
-		background-color: rgba($colorWhite, .3);
+		background-color: rgba($colorBlack, .5);
 		z-index: 9;
 }
 }
 .navigation-bar{
-	position: absolute;
+	position: fixed;
 	width: 276px;
 	min-height: 100vh;
 	opacity: 0.96;
