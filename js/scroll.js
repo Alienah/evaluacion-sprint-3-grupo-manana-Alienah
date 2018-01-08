@@ -1,36 +1,42 @@
-//Selecciona todos los enlaces con almohadilla
-$('a[href*="#"]')
-  // Quita los que no enlazan a nada en realidad
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // Enlaces dentro de la página
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-      &&
-      location.hostname == this.hostname
-    ) {
-      // Descubre el elemento al que hay que desplazarse
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Hay un objetivo al que desplazarse?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // LLamada de vuelta después de la animación
-          // Hay que cambiar el focus
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Comprueba si se hizo focus en el objetivo
+'use strict';
+
+(function() {
+	var speed = 600;
+	var movingFrequency = 15; // Affects performance !
+	var links = document.getElementsByTagName('a'); //Capta los elementos con ancla
+	var href;
+	for(var i=0; i<links.length; i++) { //Recorre todos los elementos con ancla
+    href = (links[i].attributes.href === undefined) ? null : links[i].attributes.href.nodeValue.toString();
+    if(href !== null && href.length > 1 && href.substr(0, 1) == '#') {
+      links[i].onclick = function() { //
+        var element;
+        var href = this.attributes.href.nodeValue.toString();
+        if(element = document.getElementById(href.substr(1))) {
+          var hopCount = speed/movingFrequency;
+          var getScrollTopDocumentAtBegin = getScrollTopDocument();
+          var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hopCount;
+          for(var i = 1; i <= hopCount; i++) {
+            (function() {
+              var hopTopPosition = gap*i;
+              setTimeout(function(){  window.scrollTo(0, hopTopPosition + getScrollTopDocumentAtBegin); }, movingFrequency*i);
+            })();
+          }
+        }
             return false;
-          } else {
-            $target.attr('tabindex','-1'); // Añade tabindex a elementos no "focusables"
-            $target.focus(); // Se vuelve a aplicar el focus
-          };
-        });
-      }
+      };
     }
-  });
+	}
+
+	var getScrollTopElement =  function (e) {
+    var top = 0; //Define la posición del scroll destino. Si se quiere posicionar un poco antes de que empiece la sección, se tendría que poner el número en negativo
+    while (e.offsetParent != undefined && e.offsetParent != null) {
+      top += e.offsetTop + (e.clientTop != null ? e.clientTop : 0);
+      e = e.offsetParent;
+    }
+    return top;
+	};
+
+	var getScrollTopDocument = function() {
+    return document.documentElement.scrollTop + document.body.scrollTop;
+	};
+})();
