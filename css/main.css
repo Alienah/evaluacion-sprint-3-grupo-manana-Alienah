@@ -211,9 +211,6 @@ body {
 }
 
 .reasons-item {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
   width: 184px;
 }
 
@@ -462,7 +459,7 @@ body {
 
   .list-title {
     font-size: 24px;
-    line-height: 45px;
+    margin-bottom: 30px;
   }
 
   .more-button {
