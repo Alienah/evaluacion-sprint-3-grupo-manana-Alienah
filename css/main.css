@@ -265,11 +265,11 @@ body {
 
 .navigation-bar {
   position: fixed;
-  width: 276px;
+  width: 320px;
   min-height: 100vh;
   opacity: 0.96;
   background-color: #ffffff;
-  left: -276px;
+  left: -320px;
   top: 0;
   -webkit-transition: left ease 0.8s;
   transition: left ease 0.8s;

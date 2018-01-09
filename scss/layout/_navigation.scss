@@ -28,11 +28,11 @@
 }
 .navigation-bar{
 	position: fixed;
-	width: 276px;
+	width: 320px;
 	min-height: 100vh;
 	opacity: 0.96;
   background-color: $colorWhite;
-	left: -276px;
+	left: -320px;
 	top: 0;
 	transition: left ease 0.8s;
 	.page__menu-visible &{
