@@ -2,7 +2,7 @@
 	position: relative;
 	min-height: 20vh;
 	background: $colorDarkBlue;
-	overflow: auto;
+	z-index: 9000;
 	@include flexColumnCenter;
 	align-items: center;
 }

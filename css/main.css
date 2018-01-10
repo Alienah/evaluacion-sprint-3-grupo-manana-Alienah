@@ -65,21 +65,6 @@
   background-color: #f26002;
 }
 
-.container__button-scroll {
-  position: relative;
-  z-index: 8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .scroll--up {
   background-image: url("../images/ico-arrow.svg");
   border: none;
@@ -95,6 +80,7 @@
 }
 
 .scroll--up-link {
+  z-index: 8;
   position: absolute;
   top: -25px;
 }
@@ -329,7 +315,7 @@ body {
   position: relative;
   min-height: 20vh;
   background: #304268;
-  overflow: auto;
+  z-index: 9000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

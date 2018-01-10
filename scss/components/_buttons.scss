@@ -49,13 +49,6 @@
 		background-color: $colorOrange;
 	}
 }
-.container__button-scroll{
-	position: relative;
-	z-index: 8;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
 .scroll--up{
 	background-image: url("../images/ico-arrow.svg");
 	border: none;
@@ -67,6 +60,7 @@
 	}
 }
 .scroll--up-link{
+	z-index: 8;
 	position: absolute;
 	top: -25px;
 }
