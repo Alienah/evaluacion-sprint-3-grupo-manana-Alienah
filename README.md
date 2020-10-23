@@ -9,9 +9,11 @@ Instala las dependencias locales ejecutando en la terminal el comando:
 Pasos para arrancar el proyecto:
 Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. Para ello ejecuta el comando:
 
-```npm start```
+```npm run dev```
 
 Este comando:
+
+* Arranca el servidor con la api mockeada api/reasons
 
 * Abre una ventana de Chrome y muestra tu página web, al igual que hace el plugin de VS Code Live Server (Go live).
 

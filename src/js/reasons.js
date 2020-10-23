@@ -1,20 +1,17 @@
 function getMoreReasons(){
 
   fetch('http://localhost:3000/api/reasons')
-    .then(function(response){
-      return response.json();
-    })
-    .then(function(json){
-      console.log(json);
-      var reasons = json.reasons;
-      var listHTML = '';
-      for (var i = 0; i < reasons.length; i++) {
-	  listHTML += '<li class="block-text reasons-item"><h3 class="list-title">' + reasons[i].title + '</h3><p>' + reasons[i].description + '</p></li>';
-  	}
-      var ul = document.querySelector('.reasons-list');
+    .then((response) => response.json())
+    .then((json) => {
+      const reasons = json.reasons;
+      let listHTML = '';
+      for (let i = 0; i < reasons.length; i++) {
+        listHTML += '<li class="block-text reasons-item"><h3 class="list-title">' + reasons[i].title + '</h3><p>' + reasons[i].description + '</p></li>';
+      }
+      const ul = document.querySelector('.reasons-list');
       ul.innerHTML += listHTML;
     });
 }
 
-var moreButton = document.querySelector('.more-button');
+const moreButton = document.querySelector('.more-button');
 moreButton.addEventListener('click', getMoreReasons);
