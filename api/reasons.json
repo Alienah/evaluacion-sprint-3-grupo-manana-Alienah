@@ -1,0 +1,44 @@
+{
+  "reasons": [
+    {
+      "title": "Consectetur adipiscing elit",
+      "description": "Fusce placerat ex quis viverra blandit."
+    },
+    {
+      "title": "Suspendisse potenti",
+      "description": "Aenean porttitor suscipit ex vel tempor."
+    },
+    {
+      "title": "Donec vulputate felis",
+      "description": "Nec arcu varius, eget rhoncus sem tristique. "
+    },
+    {
+      "title": "Donec convallis odio dui",
+      "description": "Eu volutpat quam interdum vitae."
+    },
+    {
+      "title": "Curabitur tincidunt",
+      "description": "Pellentesque dolor quis pretium."
+    },
+    {
+      "title": "Fusce tellus lacus",
+      "description": "Convallis eget venenatis vel, sodales sed felis."
+    },
+    {
+      "title": "Donec eget blandit elit",
+      "description": "Quis blandit diam."
+    },
+    {
+      "title": "In non risus",
+      "description": "Ut nisi aliquet dignissim quis id lorem."
+    },
+    {
+      "title": "Suspendisse nec mollis turpis",
+      "description": " Orci varius natoque penatibus et magnis dis parturient montes."
+    },
+    {
+      "title": "Nascetur ridiculus mus",
+      "description": "Nullam vel lectus in eros maximus pellentesque."
+    }
+  ]
+}

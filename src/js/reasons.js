@@ -1,6 +1,6 @@
 function getMoreReasons(){
 
-  fetch('https://three-random-reasons-izwfjpgbqm.now.sh/')
+  fetch('http://localhost:3000/api/reasons')
     .then(function(response){
       return response.json();
     })

@@ -1,4 +1,4 @@
-'use strict';
+
 
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync  = require('browser-sync');
@@ -38,8 +38,8 @@ gulp.task('bs-reload', done => {
 gulp.task('clean', () => del([ config.env.dev.dest ]));
 // gulp.task('clean', del.bind(null, [config.env.dev.dest]));
 
-gulp.task('clean-dist', () => del([ config.env.producction.dest ]));
-// gulp.task('clean-dist', del.bind(null, [config.env.producction.dest]));
+gulp.task('clean-dist', () => del([ config.env.production.dest ]));
+// gulp.task('clean-dist', del.bind(null, [config.env.production.dest]));
 
 // > Procesa los archivos SASS/SCSS, añade sourcemaps y autoprefixer
 gulp.task('css', done => {

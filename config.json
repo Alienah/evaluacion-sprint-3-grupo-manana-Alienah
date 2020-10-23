@@ -3,7 +3,7 @@
     "dev": {
       "dest": "public"
     },
-    "producction": {
+    "production": {
       "dest": "docs"
     }
   },
